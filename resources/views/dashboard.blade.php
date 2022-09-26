@@ -29,7 +29,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>N</h3>
+                <h3>{{ $products }}</h3>
 
                 <p>Products</p>
               </div>
