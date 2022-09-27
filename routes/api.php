@@ -28,10 +28,10 @@ Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/products/category/{category}', [ProductController::class, 'find_by_category']);
 
-Route::middleware('auth:sanctum')->get('/products/{id}', [ProductController::class, 'show']);
+Route::get('/products/{id}', [ProductController::class, 'show']);
 
-Route::middleware('auth:sanctum')->post('/products',[ProductController::class, 'create']);
+Route::post('/products',[ProductController::class, 'create']);
 
-Route::middleware('auth:sanctum')->put('/products/{id}', [ProductController::class, 'update']);
+Route::put('/products/{id}', [ProductController::class, 'update']);
 
-Route::middleware('auth:sanctum')->delete('/products/{id}', [ProductController::class, 'delete']);
+Route::delete('/products/{id}', [ProductController::class, 'delete']);

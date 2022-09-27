@@ -33,8 +33,8 @@ class ProductController extends Controller
         }
     
 
-        public function find_by_category($request){
-            $data = Product::where('request_id', $request)->get();
+        public function find_by_category($category){
+            $data = Product::where('category', $category)->get();
     
             return [
                 'message' => 'Successfully retrieved',

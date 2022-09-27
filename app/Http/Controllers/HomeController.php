@@ -32,6 +32,7 @@ class HomeController extends Controller
        return view('dashboard',[
         'users' => $users,
         'products' => $products,
+
        ]);
     }
 }

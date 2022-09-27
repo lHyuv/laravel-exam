@@ -8,14 +8,16 @@
 
           <!-- Main content -->
     <section class="content">
-     
+ 
     <div class="row">
+
           <div class="col-lg-6 col-6">
+        
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>{{ $users }}</h3>
-
+               
                 <p>Users</p>
               </div>
               <div class="icon">
@@ -40,27 +42,11 @@
             </div>
           </div>
           <!-- ./col -->
-
+ 
         </div>
         <!-- /.row -->
-
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-        </div></div></div>
+        <div id = "app"></div>
+   
         
 </section>
 

@@ -25,6 +25,7 @@
     <script src = "{{ asset('adminlte/plugins/jquery/jquery.js') }}"></script>
     <script src = "{{ asset('adminlte/plugins/bootstrap/js/bootstrap.js') }}"></script>
     <script src = "{{ asset('adminlte/plugins/popper/popper.js') }}"></script>
+    <script src = "{{ asset('adminlte/plugins/popper/popper.js') }}"></script>
     <!--Plugins:end-->
     <!--Admin LTE-->
     <link href="{{ asset('adminlte/dist/css/adminlte.css') }}" rel="stylesheet">
@@ -93,15 +94,17 @@
                 </div>
             </div>
         </nav>
-
+      
         @if(Auth::user())
             @include('layouts.sidebar')
         @endif
+        
             @yield('content')
         @if(Auth::user())
             @include('layouts.footer')
         @endif
         
     </div>
+    <script src = "{{ mix('js/app.js') }}"></script>
 </body>
 </html>
